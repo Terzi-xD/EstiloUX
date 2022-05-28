@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links em arquivos HTML</title>
+</head>
+<body>
+
+    <span class="btn-topo">
+        <a href="#topo">Topo</a>
+    </span>
+    
+    <header id="topo">
+        <h1>Tecnologias Web</h1>
+
+        <nav>
+            <a href="https://www.globo.com/">Globo</a> 
+            <a href="https://recordtv.r7.com/">Record</a> 
+            <a href="https://www.band.uol.com.br/bandnews-fm">Band News</a>
+            <a href="./listas.html">Listas</a> 
+            <a href="./lista-sublista.html">Sub-Listas</a>
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#js">JavaScript</a>
+            <a href="#bt">Bootstrap</a>
+        </nav>
+
+    </header>
+
+    <style>
+        /* reset de propriedades */
+        *{
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: sans-serif;
+            background-color: beige;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10%;
+            border: 1px solid black;
+        }
+        header nav, header h1 {
+            border: 1px solid black;
+        }
+
+        main {
+            border: 3px solid red;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            margin-top: 20px;
+        }
+
+        main section {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            background-color: salmon;
+            border: 1px solid black;
+        }
+
+        footer {
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+        
+        footer p {
+            text-align: center;
+        }
+
+        .btn-topo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+            background-color: salmon;
+        }
+
+        .btn-topo a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+
+    </style>
+
+    <main>
+        
+        <section id="html">
+            <h2>HTML</h2>
+            <p>Texto do HTML</p>
+        </section>
+
+        <section id="css">
+            <h2>CSS</h2>
+            <p>Texto do CSS</p>
+        </section>
+
+        <section id="js">
+            <h2>JavaScript</h2>
+            <p>Texto do JavaScript</p>
+        </section>
+
+        <section id="bt">
+            <h2>Bootstrap</h2>
+            <p>Texto do Bootstrap</p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Todos os Direitos Reservados</p>
+    </footer>
+
+
+
+</body>
+</html>
